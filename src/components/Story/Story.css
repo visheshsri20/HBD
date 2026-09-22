@@ -1,0 +1,104 @@
+.story {
+  position: relative;
+
+  padding: 100px 6vw 130px;
+
+  background: #1c1717;
+  color: white;
+}
+
+.story-heading {
+  text-align: center;
+}
+
+.story-heading span {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 7px;
+  color: #d68a8a;
+}
+
+.story-heading h2 {
+  margin-top: 15px;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(38px, 4vw, 55px);
+  font-weight: 400;
+}
+
+.story-timeline {
+  max-width: 1200px;
+
+  margin: 70px auto 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.story-item {
+  position: relative;
+
+  width: 185px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-number {
+  margin-bottom: 10px;
+
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+
+  color: #a98989;
+}
+
+.story-photo {
+  padding: 9px 9px 20px;
+
+  background: #f7f0e9;
+  color: #3e2928;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+
+  transition: 0.3s ease;
+}
+
+.story-photo:hover {
+  transform: translateY(-10px) rotate(0deg);
+}
+
+.story-photo img {
+  width: 165px;
+  height: 190px;
+
+  object-fit: cover;
+}
+
+.story-photo p {
+  margin: 8px 3px 0;
+
+  text-align: center;
+
+  font-family: "Sacramento", cursive;
+  font-size: 20px;
+}
+
+.story-item:nth-child(odd) .story-photo {
+  transform: rotate(-4deg);
+}
+
+.story-item:nth-child(even) .story-photo {
+  transform: rotate(4deg);
+}
+
+.story-heart {
+  position: absolute;
+
+  right: -25px;
+  top: 52%;
+
+  color: #e98585;
+}

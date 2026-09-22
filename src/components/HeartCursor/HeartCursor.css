@@ -1,0 +1,95 @@
+/* Hide the normal cursor */
+body {
+  cursor: none;
+}
+
+/* Heart replacing the normal cursor */
+.heart-cursor {
+  position: fixed;
+
+  width: 20px;
+  height: 20px;
+
+  z-index: 9999;
+
+  pointer-events: none;
+
+  transform: translate(-50%, -50%);
+
+  color: #ff6f91;
+
+  font-size: 20px;
+  line-height: 1;
+
+  filter:
+    drop-shadow(0 0 5px rgba(255, 105, 135, 0.7));
+
+  animation: cursorHeartbeat 1.2s ease-in-out infinite;
+}
+
+/* Hearts left behind by the cursor */
+.cursor-heart {
+  position: fixed;
+
+  z-index: 9998;
+
+  pointer-events: none;
+
+  color: #ff8fa3;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(var(--rotation));
+
+  animation: heartTrail 0.9s ease-out forwards;
+}
+
+@keyframes heartTrail {
+  0% {
+    opacity: 0.9;
+
+    transform:
+      translate(-50%, -50%)
+      rotate(var(--rotation))
+      scale(1);
+  }
+
+  100% {
+    opacity: 0;
+
+    transform:
+      translate(
+        calc(-50% + var(--drift-x, 0px)),
+        calc(-50% - 35px)
+      )
+      rotate(var(--rotation))
+      scale(0.3);
+  }
+}
+
+@keyframes cursorHeartbeat {
+  0%,
+  100% {
+    transform:
+      translate(-50%, -50%)
+      scale(1);
+  }
+
+  50% {
+    transform:
+      translate(-50%, -50%)
+      scale(1.2);
+  }
+}
+
+/* Don't show custom cursor on touch devices */
+@media (hover: none), (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+
+  .heart-cursor,
+  .cursor-heart {
+    display: none;
+  }
+}

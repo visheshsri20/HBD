@@ -1,0 +1,148 @@
+.app {
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 50;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+
+  padding: 0 4vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+
+  background: rgba(10, 8, 8, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+.nav-logo {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+}
+
+.nav-logo:first-letter {
+  color: #ff9b9b;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.8);
+
+  text-decoration: none;
+
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+
+  transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #ffaaa8;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+
+  .birthday,
+  .misty,
+  .letter {
+    flex-direction: column;
+  }
+
+  .birthday-photo {
+    display: none;
+  }
+
+  .story-timeline {
+    flex-wrap: wrap;
+  }
+
+  .memories-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .memories-heading p {
+    text-align: left;
+  }
+
+  .memories-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .memory-0,
+  .memory-1,
+  .memory-2,
+  .memory-3,
+  .memory-4,
+  .memory-5 {
+    grid-column: span 1;
+    margin-top: 0;
+  }
+
+  .final-content {
+    grid-template-columns: 1fr;
+  }
+
+  .final-note,
+  .final-love {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .memories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .memory-0,
+  .memory-1,
+  .memory-2,
+  .memory-3,
+  .memory-4,
+  .memory-5 {
+    grid-column: span 1;
+  }
+
+  .hero {
+    padding: 100px 7vw;
+  }
+
+  .hero-note {
+    display: none;
+  }
+
+  .story-timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .misty-photos {
+    width: 100%;
+  }
+
+  .misty-photo {
+    width: 170px;
+  }
+
+  .letter-paper {
+    padding: 45px 30px;
+  }
+}

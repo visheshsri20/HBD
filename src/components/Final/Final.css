@@ -1,0 +1,97 @@
+.final {
+  min-height: 650px;
+
+  position: relative;
+
+  display: grid;
+  place-items: center;
+
+  padding: 100px 7vw;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(145, 67, 67, 0.25),
+      transparent 45%
+    ),
+    #100d0d;
+
+  color: white;
+}
+
+.final-content {
+  width: 100%;
+  max-width: 1200px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.final-note,
+.final-love {
+  font-family: "Sacramento", cursive;
+  font-size: 28px;
+  color: #c5a9a9;
+}
+
+.final-love {
+  text-align: left;
+}
+
+.final-label {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 8px;
+
+  color: #c48787;
+}
+
+.final h2 {
+  margin: 15px 0;
+
+  font-family: "Sacramento", cursive;
+  font-size: clamp(70px, 9vw, 125px);
+  font-weight: 400;
+  line-height: 0.9;
+
+  color: #ff9c9c;
+}
+
+.final-heart {
+  color: #ff9c9c;
+  font-size: 30px;
+}
+
+.final p {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #ddd;
+}
+
+.final button {
+  margin-top: 25px;
+
+  padding: 13px 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+
+  background: #a65353;
+  color: white;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  transition: 0.3s ease;
+}
+
+.final button:hover {
+  transform: translateY(-3px);
+  background: #bd6060;
+}

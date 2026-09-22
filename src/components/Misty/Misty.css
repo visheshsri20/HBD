@@ -1,0 +1,93 @@
+.misty {
+  min-height: 620px;
+
+  padding: 100px 7vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 70px;
+
+  background: #191515;
+  color: white;
+}
+
+.misty-content {
+  max-width: 360px;
+}
+
+.misty-content > span {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 5px;
+
+  color: #d98989;
+}
+
+.misty-content h2 {
+  margin: 20px 0;
+
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.misty-content h2 em {
+  color: #df9b9b;
+}
+
+.misty-content p {
+  font-family: "Sacramento", cursive;
+  font-size: 27px;
+
+  color: #c9b4b4;
+}
+
+.misty-photos {
+  position: relative;
+
+  width: 570px;
+  height: 450px;
+}
+
+.misty-photo {
+  position: absolute;
+
+  width: 220px;
+
+  padding: 10px 10px 20px;
+
+  background: #f8f1ea;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.misty-photo img {
+  width: 100%;
+  height: 250px;
+
+  object-fit: cover;
+}
+
+.misty-one {
+  left: 0;
+  top: 70px;
+
+  transform: rotate(-7deg);
+}
+
+.misty-two {
+  right: 20px;
+  top: 0;
+
+  transform: rotate(5deg);
+}
+
+.misty-three {
+  left: 175px;
+  bottom: 0;
+
+  transform: rotate(-2deg);
+}

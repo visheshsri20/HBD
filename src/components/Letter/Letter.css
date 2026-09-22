@@ -1,0 +1,82 @@
+.letter {
+  min-height: 650px;
+
+  padding: 110px 7vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 80px;
+
+  background: #eadbd3;
+
+  color: #4b3332;
+}
+
+.letter-intro {
+  max-width: 350px;
+}
+
+.letter-intro span {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+
+.letter-intro h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  font-weight: 400;
+}
+
+.letter-paper {
+  position: relative;
+
+  width: min(550px, 90vw);
+
+  padding: 60px;
+
+  background: #f8eee5;
+
+  box-shadow: 0 25px 50px rgba(65, 38, 25, 0.2);
+
+  transform: rotate(1.5deg);
+
+  font-family: "Sacramento", cursive;
+  font-size: 25px;
+  line-height: 1.35;
+}
+
+.letter-paper::before {
+  content: "";
+
+  position: absolute;
+  inset: 18px;
+
+  border: 1px dashed rgba(120, 75, 70, 0.25);
+
+  pointer-events: none;
+}
+
+.letter-tape {
+  position: absolute;
+
+  top: -15px;
+  left: 50%;
+
+  width: 100px;
+  height: 30px;
+
+  transform: translateX(-50%) rotate(-2deg);
+
+  background: rgba(203, 169, 140, 0.65);
+}
+
+.letter-greeting {
+  font-size: 36px;
+}
+
+.letter-signature {
+  text-align: right;
+}
