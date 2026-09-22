@@ -16,7 +16,7 @@ const memories = [
   },
   {
     image: "/photos/memory10.jpeg",
-    text: "Us being us. ❤️",
+    text: "Time stances for life. ❤️",
   },
   {
     image: "/photos/memory2.jpeg",
